@@ -81,11 +81,11 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-red-600 text-white selection:bg-yellow-400 selection:text-black">
+    <div className="min-h-screen bg-yellow-400 text-black selection:bg-black selection:text-yellow-400">
       <Header />
       
       <main id="menu-anchor" className="container mx-auto px-4 py-12">
-        <div className="flex flex-wrap justify-center gap-3 mb-16 bg-black p-4 rounded-[3rem] shadow-2xl border-4 border-yellow-400">
+        <div className="flex flex-wrap justify-center gap-3 mb-16 bg-black p-4 rounded-[3rem] shadow-2xl border-4 border-red-600">
           <button 
             onClick={() => setActiveTab(MenuTab.COMBOS)}
             className={`px-8 py-5 rounded-full font-boom text-sm md:text-2xl transition-all shadow-lg border-b-8 ${
@@ -129,9 +129,9 @@ const App: React.FC = () => {
         </div>
 
         {filteredProducts.length === 0 && (
-          <div className="text-center py-24 bg-black/40 rounded-[3rem] border-8 border-dashed border-yellow-400/20">
-            <i className="fa-solid fa-explosion text-9xl text-yellow-400/20 mb-8"></i>
-            <p className="text-yellow-400 font-boom text-3xl uppercase tracking-widest">Aguardando a próxima explosão de sabores!</p>
+          <div className="text-center py-24 bg-black/10 rounded-[3rem] border-8 border-dashed border-red-600/20">
+            <i className="fa-solid fa-explosion text-9xl text-red-600/20 mb-8"></i>
+            <p className="text-red-700 font-boom text-3xl uppercase tracking-widest">Aguardando a próxima explosão de sabores!</p>
           </div>
         )}
       </main>

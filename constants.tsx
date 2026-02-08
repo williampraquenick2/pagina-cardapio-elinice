@@ -9,7 +9,7 @@ export const BUSINESS_INFO = {
   deliveryLink: 'https://instadelivery.com.br/boomsalgados',
   mapsLink: 'https://www.google.com/maps/search/?api=1&query=Av.+Altin%C3%B3polis,+423+A+-+Jardim+Santa+Helena+Itaquaquecetuba+SP',
   logo: 'https://i.imgur.com/DDYp38u.png',
-  pudimImage: 'https://i.imgur.com/wLxUbp4.jpeg'
+  kitDescartaveisImage: 'https://i.imgur.com/m75EpAy.jpeg'
 };
 
 export const MENU_DATA: Product[] = [
@@ -50,10 +50,10 @@ export const MENU_DATA: Product[] = [
 ];
 
 export const UPSELL_PRODUCT: Product = {
-  id: 'upsell-pudim',
-  name: 'PUDIM DE SOBREMESA',
-  description: 'Aquele toque final irresistível!',
-  price: 16.90,
+  id: 'upsell-descartaveis',
+  name: 'KIT DESCARTÁVEIS',
+  description: 'Praticidade total: pratos, copos e guardanapos!',
+  price: 15.00,
   category: 'EXTRA',
-  image: BUSINESS_INFO.pudimImage
+  image: BUSINESS_INFO.kitDescartaveisImage
 };
