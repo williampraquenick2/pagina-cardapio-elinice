@@ -1,12 +1,12 @@
 
-import React, { useState, useEffect, useMemo } from 'react';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import ProductCard from './components/ProductCard';
-import Cart from './components/Cart';
-import UpsellModal from './components/UpsellModal';
-import { Product, CartItem, MenuTab } from './types';
-import { MENU_DATA, BUSINESS_INFO, UPSELL_PRODUCT } from './constants';
+import React, { useState, useMemo } from 'react';
+import Header from './components/Header.tsx';
+import Footer from './components/Footer.tsx';
+import ProductCard from './components/ProductCard.tsx';
+import Cart from './components/Cart.tsx';
+import UpsellModal from './components/UpsellModal.tsx';
+import { Product, CartItem, MenuTab } from './types.ts';
+import { MENU_DATA, BUSINESS_INFO, UPSELL_PRODUCT } from './constants.tsx';
 
 const App: React.FC = () => {
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
@@ -85,7 +85,6 @@ const App: React.FC = () => {
       <Header />
       
       <main id="menu-anchor" className="container mx-auto px-4 py-12">
-        {/* Navigation Tabs - NON-STICKY AS REQUESTED */}
         <div className="flex flex-wrap justify-center gap-3 mb-16 bg-black p-4 rounded-[3rem] shadow-2xl border-4 border-yellow-400">
           <button 
             onClick={() => setActiveTab(MenuTab.COMBOS)}
@@ -119,7 +118,6 @@ const App: React.FC = () => {
           </button>
         </div>
 
-        {/* Product Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12 pb-24">
           {filteredProducts.map(product => (
             <ProductCard 
@@ -130,7 +128,6 @@ const App: React.FC = () => {
           ))}
         </div>
 
-        {/* Empty State */}
         {filteredProducts.length === 0 && (
           <div className="text-center py-24 bg-black/40 rounded-[3rem] border-8 border-dashed border-yellow-400/20">
             <i className="fa-solid fa-explosion text-9xl text-yellow-400/20 mb-8"></i>
