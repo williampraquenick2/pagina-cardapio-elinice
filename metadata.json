@@ -1,0 +1,7 @@
+{
+  "name": "BOOM SALGADOS - Cardápio Digital",
+  "description": "Um cardápio digital interativo e moderno para a BOOM SALGADOS, focado em alta conversão para WhatsApp e experiência do usuário dinâmica.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
