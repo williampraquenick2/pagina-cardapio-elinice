@@ -3,11 +3,11 @@ import { Product } from './types';
 
 export const BUSINESS_INFO = {
   name: 'BOOM SALGADOS',
-  address: 'Av. Altinópolis, 423 A – Jardim Santa Helena, Itaquaquecetuba | SP',
+  address: 'Rua Igaratá, 208 – Jardim Santa Helena, Itaquaquecetuba | SP - CEP: 08570-740',
   whatsapp: '5511954609368',
   instagram: 'boomsalgados',
   deliveryLink: 'https://instadelivery.com.br/boomsalgados',
-  mapsLink: 'https://www.google.com/maps/search/?api=1&query=Av.+Altin%C3%B3polis,+423+A+-+Jardim+Santa+Helena+Itaquaquecetuba+SP',
+  mapsLink: 'https://www.google.com/maps/search/?api=1&query=Rua+Igarata+208+Jardim+Santa+Helena+Itaquaquecetuba+SP+08570-740',
   logo: 'https://i.imgur.com/DDYp38u.png',
   kitDescartaveisImage: 'https://i.imgur.com/m75EpAy.jpeg'
 };
@@ -53,7 +53,7 @@ export const UPSELL_PRODUCT: Product = {
   id: 'upsell-descartaveis',
   name: 'KIT DESCARTÁVEIS',
   description: 'Praticidade total: pratos, copos e guardanapos!',
-  price: 15.00,
+  price: 60.00,
   category: 'EXTRA',
   image: BUSINESS_INFO.kitDescartaveisImage
 };
